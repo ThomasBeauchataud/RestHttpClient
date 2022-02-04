@@ -10,7 +10,7 @@
  * From 26/01/2022
  */
 
-namespace App\HttpClient;
+namespace TBCD\RestHttpClient\HttpClient;
 
 use Symfony\Contracts\HttpClient\Exception\ExceptionInterface;
 

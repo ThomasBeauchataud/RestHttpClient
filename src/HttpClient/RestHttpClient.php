@@ -1,6 +1,6 @@
 <?php
 
-namespace App\HttpClient;
+namespace TBCD\RestHttpClient\HttpClient;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpClient\Exception\InvalidArgumentException;

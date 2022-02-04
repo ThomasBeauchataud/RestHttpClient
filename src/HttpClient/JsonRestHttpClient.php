@@ -1,6 +1,6 @@
 <?php
 
-namespace App\HttpClient;
+namespace TBCD\RestHttpClient\HttpClient;
 
 use Symfony\Component\HttpClient\Exception\JsonException;
 use Symfony\Component\HttpFoundation\Request;
