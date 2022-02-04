@@ -1,5 +1,15 @@
 <?php
 
+/*
+ * The file is part of the TBCD\RestHttpClient library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * Author Thomas Beauchataud
+ * From 26/01/2022
+ */
+
 namespace TBCD\RestHttpClient\HttpClient;
 
 use Psr\Log\LoggerInterface;
