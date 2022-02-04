@@ -5,7 +5,7 @@ namespace TBCD\RestHttpClient\HttpClient;
 use Symfony\Component\HttpClient\Exception\JsonException;
 use Symfony\Component\HttpFoundation\Request;
 
-class JsonRestHttpClient extends RestHttpClient implements RestHttpClientInterface
+class JsonRestHttpClient extends RestHttpClient implements JsonRestHttpClientInterface
 {
 
     /**

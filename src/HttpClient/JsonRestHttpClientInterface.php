@@ -27,7 +27,7 @@ interface JsonRestHttpClientInterface extends RestHttpClientInterface
      * @return array
      * @throws ExceptionInterface
      */
-    public function get(string $url, array $parameters = [], array $headers = []): array;
+    public function get(string $url, array $parameters = [], array $headers = []): mixed;
 
     /**
      * Perform a POST request on a REST API with a JSON body
@@ -39,7 +39,7 @@ interface JsonRestHttpClientInterface extends RestHttpClientInterface
      * @return array
      * @throws ExceptionInterface
      */
-    public function post(string $url, array $parameters = [], array $headers = []): array;
+    public function post(string $url, array $parameters = [], array $headers = []): mixed;
 
     /**
      * Perform a PUT request on a REST API with a JSON body
@@ -51,7 +51,7 @@ interface JsonRestHttpClientInterface extends RestHttpClientInterface
      * @return array
      * @throws ExceptionInterface
      */
-    public function put(string $url, array $parameters = [], array $headers = []): array;
+    public function put(string $url, array $parameters = [], array $headers = []): mixed;
 
     /**
      * Perform a PATCH request on a REST API with a JSON body
@@ -63,7 +63,7 @@ interface JsonRestHttpClientInterface extends RestHttpClientInterface
      * @return array
      * @throws ExceptionInterface
      */
-    public function patch(string $url, array $parameters = [], array $headers = []): array;
+    public function patch(string $url, array $parameters = [], array $headers = []): mixed;
 
     /**
      * Perform a DELETE request on a REST API with a JSON body
@@ -75,5 +75,5 @@ interface JsonRestHttpClientInterface extends RestHttpClientInterface
      * @return array
      * @throws ExceptionInterface
      */
-    public function delete(string $url, array $parameters = [], array $headers = []): array;
+    public function delete(string $url, array $parameters = [], array $headers = []): mixed;
 }
