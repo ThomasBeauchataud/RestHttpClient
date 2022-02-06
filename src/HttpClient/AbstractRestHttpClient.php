@@ -19,7 +19,7 @@ use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\ExceptionInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
-class RestHttpClient implements RestHttpClientInterface
+abstract class AbstractRestHttpClient implements RestHttpClientInterface
 {
 
     protected HttpClientInterface $httpClient;
@@ -65,7 +65,7 @@ class RestHttpClient implements RestHttpClientInterface
      */
     public function patch(string $url, array $parameters = [], array $headers = []): mixed
     {
-        return $this->run(Request::METHOD_PUT, $url, $parameters, $headers);
+        return $this->run(Request::METHOD_PATCH, $url, $parameters, $headers);
     }
 
     /**
